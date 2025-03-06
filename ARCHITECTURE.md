@@ -1,5 +1,5 @@
 ```mermaid
-Graph TD
+C4Context
     Person(patient, "Patient", "A user who books appointments.")
     Person(doctor, "Doctor", "A healthcare provider who manages appointments.")
     System(appointmentSystem, "Appointment Scheduling System", "Manages appointments online.")
