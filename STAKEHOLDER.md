@@ -1,6 +1,6 @@
-# 1. Stakeholder Analysis
+# Stakeholder Analysis
 
-## Patients
+## 1. Patients
 ### Role in the System:
 Schedule and manage appointments
 
@@ -13,7 +13,7 @@ Long wait times, missed appointments
 ### Success Metrics:
 90% reduction in missed appointments
 
-## Doctors
+## 2. Doctors
 ### Role in the System:
 Provide consultation, manage schedules
 
@@ -26,7 +26,7 @@ Overbooked slots, no-shows
 ### Success Metrics:
 80% reduction in schedule conflicts
 
-## Receptionists
+## 3. Receptionists
 ### Role in the System:
 Manage patient bookings and doctor availability
 
@@ -39,7 +39,7 @@ Manual errors, miscommunication
 ### Success Metrics:
 95% accurate schedule updates
 
-## IT Support Team
+## 4. IT Support Team
 ### Role in the System:
 Maintain system uptime and security
 
@@ -52,7 +52,7 @@ System crashes, unauthorized access
 ### Success Metrics:
 99.9% uptime, zero security breaches
 
-## Hospital Admins
+## 5. Hospital Admins
 ### Role in the System:
 Oversee system performance and staff efficiency
 
@@ -65,7 +65,7 @@ Lack of analytics, poor staff utilization
 ### Success Metrics:
 100% compliance with regulations
 
-## Insurance Providers
+## 6. Insurance Providers
 ### Role in the System:
 Verify patient coverage for consultations
 
