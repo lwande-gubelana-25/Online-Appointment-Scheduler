@@ -1,0 +1,13 @@
+graph TD;
+    Patient -->|Books| BookAppointment;
+    Patient -->|Cancels| CancelAppointment;
+    Patient -->|Modifies| ModifyAppointment;
+    Patient -->|Views| ViewDoctorAvailability;
+    System -->|Sends| SendAppointmentReminders;
+    Patient -->|Pays| ProcessPayment;
+    System -->|Verifies| VerifyInsurance;
+    Admin -->|Generates| GenerateReports;
+    Doctor -->|Manages| ManageAppointments;
+    Receptionist -->|Schedules| BookAppointment;
+    Receptionist -->|Updates| ModifyAppointment;
+    InsuranceProvider -->|Verifies| VerifyInsurance;
