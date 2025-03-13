@@ -1,3 +1,4 @@
+```mermaid
 graph TD;
     Patient -->|Books| BookAppointment;
     Patient -->|Cancels| CancelAppointment;
