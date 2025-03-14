@@ -5,7 +5,7 @@
 3. Receptionist – Handles manual appointment scheduling.
 4. Admin – Manages user roles and permissions.
 5. System – Automates notifications and reminders.
-6. nsurance Provider – Verifies coverage for patients.
+6. Insurance Provider – Verifies coverage for patients.
 
 ## Use Cases:
 1. Book Appointment – Patient schedules an appointment.
