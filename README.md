@@ -17,7 +17,7 @@ This is a system for managing patient appointments with healthcare providers.
 ### Assignment 5
 - [Use Case Diagram](USE-CASE-DIAGRAM.md)
 - [Use Case Specification](USE-CASE-SPECIFICATION.md)
-- [Test Case Development](TEST-CASE)
+- [Test Case Development](TEST-CASE.md)
 - [Dcumentation](DOCUMENTATION2.md)
 
   ### Assignment 6
@@ -27,4 +27,6 @@ This is a system for managing patient appointments with healthcare providers.
 - [Documentation](DOCUMENTATION3.md)
 
   ### Assignment 7
-  - [Template Analysis and Selection](TEMPLATE-ANALYSIS-AND-SELECTION)
+  - [Template Analysis and Selection](TEMPLATE-ANALYSIS-AND-SELECTION.md)
+  - [Kanban Board Explanation](KANNBAN-BOARD-EXPLANATION.md)
+  - [Reflection](REFLECTION.md)
