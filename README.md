@@ -30,3 +30,6 @@ This is a system for managing patient appointments with healthcare providers.
   - [Template Analysis and Selection](TEMPLATE-ANALYSIS-AND-SELECTION.md)
   - [Kanban Board Explanation](KANBAN-BOARD-EXPLANATION.md)
   - [Reflection](REFLECTION.md)
+ 
+  - ![Project Screenshot]
+  - ![Project Screenshot]
