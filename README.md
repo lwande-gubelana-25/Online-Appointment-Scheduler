@@ -31,5 +31,5 @@ This is a system for managing patient appointments with healthcare providers.
   - [Kanban Board Explanation](KANBAN-BOARD-EXPLANATION.md)
   - [Reflection](REFLECTION.md)
  
-  - ![Project Screenshot]
+  - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(105).png?raw=true)
   - ![Project Screenshot]
