@@ -25,3 +25,6 @@ This is a system for managing patient appointments with healthcare providers.
 - [Product Backlog Creation](PRODUCT-BACKLOG.md)
 - [Sprint Planning](SPRINT-PLAN.md)
 - [Documentation](DOCUMENTATION3.md)
+
+  ### Assignment 7
+  - [Template Analysis and Selection](TEMPLATE-ANALYSIS-AND-SELECTION)
