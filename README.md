@@ -28,5 +28,5 @@ This is a system for managing patient appointments with healthcare providers.
 
   ### Assignment 7
   - [Template Analysis and Selection](TEMPLATE-ANALYSIS-AND-SELECTION.md)
-  - [Kanban Board Explanation](KANNBAN-BOARD-EXPLANATION.md)
+  - [Kanban Board Explanation](KANBAN-BOARD-EXPLANATION.md)
   - [Reflection](REFLECTION.md)
