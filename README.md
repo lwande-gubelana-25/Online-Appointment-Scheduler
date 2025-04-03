@@ -33,3 +33,22 @@ This is a system for managing patient appointments with healthcare providers.
  
   - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(105).png?raw=true)
   - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(106).png?raw=true)
+
+### Assisgnment 8
+### Project Documentation
+
+### **State Transition Diagrams**
+This project uses **UML State Transition Diagrams** to model system behavior.
+
+## **Diagrams & Explanations**
+- [Object State Modeling](OBJECT-STATE-MODELING.md)
+- [Activity Workflow Modeling](ACTIVITY-WORKFLOW-MODELING.md)
+
+Each diagram is **mapped to functional requirements** and **user stories from previous assignments** for traceability.
+
+## **Sprint Integration**
+These diagrams align with **Assignment 6’s sprint plan**, ensuring that:
+- All **user stories** have state-based representations.
+- Functional flows match Agile development practices.
+
+For full details, check the **[Sprint Planning Document](SPRINT-PLAN.md)**.
