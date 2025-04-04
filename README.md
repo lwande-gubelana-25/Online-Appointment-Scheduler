@@ -52,3 +52,5 @@ These diagrams align with **Assignment 6’s sprint plan**, ensuring that:
 - Functional flows match Agile development practices.
 
 For full details, check the **[Sprint Planning Document](SPRINT-PLAN.md)**.
+## Reflection
+- [Reflection](REFLECTION2.md)
