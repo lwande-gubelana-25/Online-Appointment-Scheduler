@@ -34,7 +34,7 @@ This is a system for managing patient appointments with healthcare providers.
   - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(105).png?raw=true)
   - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(106).png?raw=true)
 
-### Assisgnment 8
+### Assignment 8
 ### Project Documentation
 
 ### **State Transition Diagrams**
@@ -55,3 +55,8 @@ For full details, check the **[Sprint Planning Document](SPRINT-PLAN.md)**.
 
 - [Intergration](INTERGRATION.md)
 - [Reflection](REFLECTION2.md)
+
+  ### Assignment 9
+  - [Domain Model](DOMAIN-MODEL.md)
+  - [Class Diagram in Mermaid.js](CLASS-DIAGRAM.md)
+  - [Reflection](REFLECTION3.md)
