@@ -60,3 +60,33 @@ For full details, check the **[Sprint Planning Document](SPRINT-PLAN.md)**.
   - [Domain Model](DOMAIN-MODEL.md)
   - [Class Diagram in Mermaid.js](CLASS-DIAGRAM.md)
   - [Reflection](REFLECTION3.md)
+ 
+ ### Assignment 10
+ 
+#### Language Choice & Key Design Decisions
+
+#### Language Choice: Python
+I chose **Python** for this project due to its simplicity, readability, and quick development cycle. Python is particularly well-suited for object-oriented design, making it ideal for implementing real-world concepts like appointments, notifications, payments, and scheduling.
+
+Other reasons for choosing Python include:
+- Wide support for built-in libraries (e.g., `datetime`).
+- Easy-to-read syntax, which enhances collaboration and maintainability.
+
+#### Key Design Decisions
+
+- **Object-Oriented Design (OOP):**  
+  Classes were used to model real-world entities like `Appointment`, `Payment`, `Notification`, `Schedule`, and their associated behavior through methods like `book()`, `cancel()`, `processPayment()`, and `markAsRead()`.
+
+- **Modularity:**  
+  Each class is self-contained, representing a single responsibility. This makes the codebase easy to maintain, test, and extend in the future.
+
+- **State Tracking:**  
+  Attributes like `status` (for appointments and payments) and `read` (for notifications) were used to track state and enable condition-based logic (e.g., only refund if payment was completed).
+
+- **Simple Simulations:**  
+  Instead of integrating real APIs or databases at this stage, behaviors like `send()`, `processPayment()`, and `refund()` simulate realistic actions using console output, allowing for focus on structure and logic before full implementation.
+
+- **Extensibility:**  
+  This structure lays a solid foundation for adding features like persistence (databases), user input interfaces, or web integration in future phases.
+
+---
