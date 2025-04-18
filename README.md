@@ -90,3 +90,76 @@ Other reasons for choosing Python include:
   This structure lays a solid foundation for adding features like persistence (databases), user input interfaces, or web integration in future phases.
 
 ---
+
+# Creational Design Patterns – Online Appointment Scheduling System
+
+This project implements all six **creational design patterns** in Python, tailored for an **online appointment scheduling system**. Each pattern is used in a specific context that fits real-world use cases.
+
+---
+
+## Simple Factory Pattern
+**Use Case:** Creating notifications (email, SMS, push).
+
+**Why?** Centralizing notification creation avoids tightly coupling clients to specific notification types.
+
+**Implementation:** `NotificationFactory.create_notification(type, message)`
+
+---
+
+## Factory Method Pattern
+**Use Case:** Delegating payment processing.
+
+**Why?** Different payment methods (Credit Card, PayPal) have their own logic. The factory method delegates instantiation to the correct processor.
+
+**Implementation:** `PaymentFactory.get_processor(method)` returns a subclass of `PaymentProcessor`
+
+---
+
+##  Abstract Factory Pattern
+**Use Case:** Generating reminder types as a family (email, SMS).
+
+**Why?** Abstract Factory allows for generating a suite of related objects (reminders) without specifying their exact classes.
+
+**Implementation:** `EmailReminderFactory` and `SMSReminderFactory` both implement `ReminderFactory`
+
+---
+
+##  Builder Pattern
+**Use Case:** Constructing appointment objects step-by-step.
+
+**Why?** Appointments often require optional fields (e.g., note, time). Builder enables flexible and readable object creation.
+
+**Implementation:** `AppointmentBuilder().set_provider(...).set_service(...).build()`
+
+---
+
+##  Prototype Pattern
+**Use Case:** Cloning predefined service types.
+
+**Why?** Instead of creating service objects from scratch every time, clone templates to save setup time.
+
+**Implementation:** `ServicePrototype.clone()` uses deep copy
+
+---
+
+##  Singleton Pattern
+**Use Case:** Managing appointment instances globally.
+
+**Why?** We need only one instance of `AppointmentManager` to track system-wide appointments, preventing duplication or sync issues.
+
+**Implementation:** `AppointmentManager` overrides `__new__` to return the same instance
+
+---
+
+## Summary Table
+| Pattern          | Used For                    | Key Class / File                          |
+|------------------|-----------------------------|--------------------------------------------|
+| Simple Factory   | Notifications               | `simple_factory.py`                        |
+| Factory Method   | Payment processors          | `factory_method.py`                        |
+| Abstract Factory | Reminder families           | `abstract_factory.py`                      |
+| Builder          | Step-by-step appointments   | `builder.py`                               |
+| Prototype        | Cloning service templates   | `prototype.py`                             |
+| Singleton        | Shared appointment manager  | `singleton.py`                             |
+
+---
+
