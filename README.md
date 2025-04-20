@@ -163,3 +163,15 @@ This project implements all six **creational design patterns** in Python, tailor
 
 ---
 
+
+## Creational Patterns Implementation
+
+This system uses six creational design patterns to support flexibility, reuse, and separation of concerns.
+
+- **Simple Factory**: Used to create various types of notifications in a centralized way.
+- **Factory Method**: Delegates the creation of different payment processors based on the payment method (credit or PayPal).
+- **Abstract Factory**: Allows us to create consistent families of reminders (email or SMS) from their respective factories.
+- **Builder**: Useful for constructing appointments step-by-step where not all fields are required immediately.
+- **Prototype**: Avoids redundant initialization of commonly used services by cloning template instances.
+- **Singleton**: Ensures there is only one shared appointment manager across the system to track user bookings consistently.
+
