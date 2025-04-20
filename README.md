@@ -170,3 +170,4 @@ This project implements all six **creational design patterns** in Python, tailor
 
 ## Link to Use testing
 - [Use Testiing](tests)
+- [Changelog](CHANGELOG.md)
