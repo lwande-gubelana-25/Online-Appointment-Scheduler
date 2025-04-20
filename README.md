@@ -89,9 +89,13 @@ Other reasons for choosing Python include:
 - **Extensibility:**  
   This structure lays a solid foundation for adding features like persistence (databases), user input interfaces, or web integration in future phases.
 
+  ## Link to src directory
+  -[src directory](project-root)
+  the src directory is in the project-root directory.
+
 ---
 
-# Creational Design Patterns – Online Appointment Scheduling System
+# Creational Patterns  Implementation
 
 This project implements all six **creational design patterns** in Python, tailored for an **online appointment scheduling system**. Each pattern is used in a specific context that fits real-world use cases.
 
@@ -161,17 +165,8 @@ This project implements all six **creational design patterns** in Python, tailor
 | Prototype        | Cloning service templates   | `prototype.py`                             |
 | Singleton        | Shared appointment manager  | `singleton.py`                             |
 
----
+## Link to creational patterns
+-[Creational Pattern](creational_patterns)
 
-
-## Creational Patterns Implementation
-
-This system uses six creational design patterns to support flexibility, reuse, and separation of concerns.
-
-- **Simple Factory**: Used to create various types of notifications in a centralized way.
-- **Factory Method**: Delegates the creation of different payment processors based on the payment method (credit or PayPal).
-- **Abstract Factory**: Allows us to create consistent families of reminders (email or SMS) from their respective factories.
-- **Builder**: Useful for constructing appointments step-by-step where not all fields are required immediately.
-- **Prototype**: Avoids redundant initialization of commonly used services by cloning template instances.
-- **Singleton**: Ensures there is only one shared appointment manager across the system to track user bookings consistently.
-
+## Link to Use testing
+- [Use Testiing](tests)
