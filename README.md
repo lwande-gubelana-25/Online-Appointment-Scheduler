@@ -171,3 +171,47 @@ This project implements all six **creational design patterns** in Python, tailor
 ## Link to Use testing
 - [Use Testiing](tests)
 - [Changelog](CHANGELOG.md)
+
+# Assignment 11
+  
+## Repository Interface Design
+
+I implemented a generic `Repository<T, ID>` interface using Python's `abc` (Abstract Base Classes) and `generics`.
+This design was chosen because:
+
+- **Generic Reuse**: Allows reuse of the standard CRUD operations across all entities like `User`, `Appointment`, `Service`, and `Provider`.
+- **Flexibility**: Each entity-specific repository can extend the base `Repository` without rewriting basic methods.
+- **Maintainability**: If the CRUD logic ever changes globally, we only need to update it once.
+- **Compliance**: Follows standard Repository pattern practices seen in Java/Spring and other enterprise applications.
+
+Example:
+
+- `UserRepository` extends `Repository<User, String>`
+- `AppointmentRepository` extends `Repository<Appointment, String>`
+
+This ensures clean, modular, and scalable code.
+
+## In-Memory Implementation
+
+An in-memory implementation of repositories was created using simple Python dictionaries (HashMap equivalent).
+
+Benefits:
+- **Fast and lightweight**: No external dependencies needed.
+- **Ideal for Unit Testing**: Allows verifying business logic without setting up a database.
+- **Easy to extend**: Later we can replace InMemoryRepository with DatabaseRepository following the same interface.
+
+Example:
+
+- `InMemoryUserRepository` implements `save()`, `find_by_id()`, `find_all()`, and `delete()` with `_storage` dict.
+
+This approach supports Agile development by enabling early testing before full persistence is implemented.
+
+## Storage Abstraction Mechanism
+
+I implemented a `RepositoryFactory` class to abstract the repository creation.
+
+Why Factory Pattern?
+
+- **Centralized control**: All repository creation is managed through one place.
+- **Storage flexibility**: Easily switch from `InMemoryUserRepository` to `DatabaseUserRepository` in future without changing service code.
+- **Future extensibility**: Support for different storage types like NoSQL, Cloud Storage, etc.
