@@ -217,6 +217,6 @@ Why Factory Pattern?
 - **Future extensibility**: Support for different storage types like NoSQL, Cloud Storage, etc.
 
 
-- [Repositories](repositeries)
+- [Repositories](repositories)
 - [Factories](factories)
 - [Updated Class Diagram](CLASS-DIAGRAM.md)
