@@ -215,3 +215,8 @@ Why Factory Pattern?
 - **Centralized control**: All repository creation is managed through one place.
 - **Storage flexibility**: Easily switch from `InMemoryUserRepository` to `DatabaseUserRepository` in future without changing service code.
 - **Future extensibility**: Support for different storage types like NoSQL, Cloud Storage, etc.
+
+
+- [Repositories](repositeries)
+- [Factories](factories)
+- [Updated Class Diagram](CLASS-DIAGRAM.md)
