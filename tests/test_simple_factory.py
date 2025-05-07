@@ -1,5 +1,4 @@
-import unittest
-from creational_patterns.simple_factory import NotificationFactory
+from tests.factories.simple_factory import NotificationFactory
 
 class TestSimpleFactory(unittest.TestCase):
 
