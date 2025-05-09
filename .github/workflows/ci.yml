@@ -26,3 +26,31 @@ jobs:
       - name: Run tests
         run: |
           pytest tests/
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'  # Only runs for pushes to main
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install packaging tools
+        run: |
+          pip install setuptools wheel
+
+      - name: Build package
+        run: |
+          python setup.py sdist bdist_wheel
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: python-package
+          path: dist/
+
