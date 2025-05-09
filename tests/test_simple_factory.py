@@ -1,4 +1,4 @@
-from tests.factories.simple_factory import NotificationFactory
+from creational_patterns.simple_factory import NotificationFactory
 
 class NotificationFactory:
     def create_notification(self, type):
