@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Online-Appointment-Scheduler/requirements.txt
 
-      - name: Run tests
+      - name: Run unit tests with pytest
         run: |
           pytest tests/
 
