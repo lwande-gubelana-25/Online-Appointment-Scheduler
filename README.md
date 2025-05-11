@@ -226,3 +226,92 @@ the linksfor the tasks are under:
 - [online appointment scheduler](Online-Appointment-Scheduler)
 - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(114).png?raw=true)
   
+
+# Assignment 13
+## Running Tests Locally
+
+### Running Tests Locally
+
+To run unit tests on your machine:
+
+```bash
+```
+### Install dependencies
+pip install -r requirements.txt
+
+### Run tests
+pytest
+
+
+
+
+---
+
+## How the CI/CD Pipeline Works
+```md
+```
+### CI/CD Pipeline (GitHub Actions)
+
+- **CI (Continuous Integration):**
+  - Runs on every push and pull request.
+  - Automatically runs `pytest` to validate the codebase.
+  - Pull requests cannot be merged unless all tests pass.
+
+- **CD (Continuous Delivery):**
+  - Builds and uploads a Python package artifact.
+  - Only runs when code is merged into the `main` branch.
+  - Uses `setuptools` to package and `actions/upload-artifact` to store the result.
+
+ 
+### Reflection
+
+This project challenged me across multiple areas, particularly involving GitHub workflows, Python project structure, and CI/CD automation. Here are the key areas I struggled with:
+
+---
+
+#### GitHub Actions CI/CD
+
+* I encountered recurring issues with **`ModuleNotFoundError`** for imports like `from src.user` or `from api.main`. These were often due to how Python resolves paths in GitHub Actions.
+* **Workflow jobs failed** initially because of invalid imports, missing modules, or tests not being collected due to directory structure problems.
+* The message *"This workflow graph cannot be shown"* was confusing until I realized it meant the workflow hadn’t been triggered yet.
+
+---
+
+#### Test Automation
+
+* I had trouble getting `pytest` to collect tests properly. The issue stemmed from:
+
+  * Incorrect or broken `import` statements in test files (e.g., `from tests.factories.simple_factory` with missing `import`)
+  * Misplaced test files or lack of `__init__.py` in module directories.
+* Even after writing valid test cases, some still failed in the pipeline because they weren't correctly linked to the source code due to relative import issues.
+ - ![Project Screenshot](![Screenshot (119)](https://github.com/user-attachments/assets/4e751035-9a9c-4ffe-b6bd-7b452114d823)
+)
+---
+
+#### Branch Protection & PR Reviews
+
+* I attempted to enable **branch protection rules**, but couldn’t fully enforce rules like "disable direct pushes" because GitHub wouldn't let me approve my own pull request or enforce it alone as the only user with write access.
+* The **“Approve” button was greyed out**, blocking the PR from merging.
+
+---
+
+#### Artifact Build (CD)
+
+* I implemented the `build` job for uploading Python packages but ran into difficulties confirming whether the `.whl` file was being created properly and when it appeared in GitHub Actions.
+
+---
+
+#### Lessons Learned
+
+* CI/CD pipelines require strict attention to folder structure, consistent naming, and proper Python packaging setup (`setup.py`, `__init__.py`).
+* GitHub Actions workflows can fail silently or cryptically if dependencies, paths, or imports aren’t configured just right.
+* Visual debugging (like seeing artifacts or test coverage) is hard unless all previous steps are correctly wired.
+
+---
+
+### Despite these challenges, this assignment taught me a lot about:
+
+* The inner workings of GitHub Actions
+* Test-driven development using `pytest`
+* Structuring a Python project to be CI/CD-friendly
+* Writing workflows that automate both test and build pipelines
