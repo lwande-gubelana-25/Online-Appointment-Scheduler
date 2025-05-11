@@ -1,4 +1,4 @@
-from tests.factories.simple_factory import NotificationFactory
+from tests.simple_factory import NotificationFactory
 
 def test_email_notification():
     factory = NotificationFactory()
