@@ -28,28 +28,29 @@ jobs:
           pytest tests/ --maxfail=3 --disable-warnings -v
 
 
-    build:
+     build:
     needs: test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      - name: Set Up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install packaging tools
         run: |
           pip install setuptools wheel
 
-      - name: Build package
+      - name: Build artifact
         run: |
           python setup.py sdist bdist_wheel
 
-      - name: Upload artifact
+      - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
           name: python-package
