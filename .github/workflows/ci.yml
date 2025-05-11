@@ -23,9 +23,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r Online-Appointment-Scheduler/requirements.txt
 
-      - name: Run Unit Tests
+      - name: Run Tests
         run: |
-          pytest tests/ --maxfail=3 --disable-warnings -v
+          pytest tests/
 
 
      build:
