@@ -12,7 +12,7 @@
 ```bash
 ```
 # Clone the repo
-git clone https:
+git clone https: https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler.git
 cd Online-Appointment-Scheduler
 
 # Set up virtual environment
