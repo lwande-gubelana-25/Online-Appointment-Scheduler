@@ -243,7 +243,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/Online-Appointment-Scheduler.git
+   git clone https://github.com/<your-username>/Online-Appointment-Scheduler.git](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler.git)
    cd Online-Appointment-Scheduler
 
 ---
@@ -262,3 +262,6 @@ To run this project locally, follow these steps:
 | Multi-language Support                  | Planned   | Intermediate     | i18n support (e.g., `gettext`)   |
 | Recurring Appointments                  | Planned   | Intermediate     | Requires calendar logic          |
 | Appointment Analytics                   | Planned   | Beginner         | Dashboard charts                 |
+
+
+# Links to Assignment 14 files
