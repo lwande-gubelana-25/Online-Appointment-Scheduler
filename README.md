@@ -265,3 +265,13 @@ To run this project locally, follow these steps:
 
 
 # Links to Assignment 14 files
+## Repository Preperation
+- [Contribution file](CONTRIBUTING.md)
+- [Roadmap file](ROADMAP.md)
+- [License](LICENSE)
+
+## Peer Review Process
+- [Voting Results](VOTING_RESULTS.md)
+
+## Reflection
+- [Reflection](REFLECTION14.md)
