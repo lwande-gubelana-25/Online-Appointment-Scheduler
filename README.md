@@ -225,4 +225,40 @@ Why Factory Pattern?
 the linksfor the tasks are under:
 - [online appointment scheduler](Online-Appointment-Scheduler)
 - ![Project Screenshot](https://github.com/lwande-gubelana-25/Online-Appointment-Scheduler/blob/main/Screenshot%20(114).png?raw=true)
-  
+
+
+  # Assignment 14
+
+  ## Getting Started
+
+To run this project locally, follow these steps:
+
+### Prerequisites
+
+- Python 3.11+
+- Git
+- pip (Python package manager)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/<your-username>/Online-Appointment-Scheduler.git
+   cd Online-Appointment-Scheduler
+
+---
+
+## Step 3: Add the "Features for Contribution" Table
+
+## Features for Contribution
+
+| Feature                                 | Status    | Difficulty       | Notes                           |
+|-----------------------------------------|-----------|------------------|----------------------------------|
+| Redis Caching for Appointments          | Planned   | Intermediate     | Improves performance             |
+| SMS Notifications via Twilio            | Planned   | Intermediate     | Use external API                 |
+| Admin Dashboard                         | In Progress | Advanced       | UI + Role-based control          |
+| Docker Support                          | Planned   | Intermediate     | Useful for deployment            |
+| OAuth Login (Google, GitHub)            | Planned   | Advanced         | Use `authlib` or similar         |
+| Multi-language Support                  | Planned   | Intermediate     | i18n support (e.g., `gettext`)   |
+| Recurring Appointments                  | Planned   | Intermediate     | Requires calendar logic          |
+| Appointment Analytics                   | Planned   | Beginner         | Dashboard charts                 |
